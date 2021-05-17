@@ -13,7 +13,7 @@ describe('variables', function () {
   it('leftover should equal 2', function () {
     assert.equal(2, leftover)
   })
-})
+})                                                      
 
 describe('greeting', function () {
   it('should say hello to Chase', function () {

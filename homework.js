@@ -37,15 +37,15 @@ function isEven (number) {
 // 6. Create a function called fahrenheitToCelsius that takes a
 // Fahrenheit temperature as an argument and returns the
 // temperature in Celsius.
-function fahrenheitToCelsius (number) {
-    return ((number - 32) * (5/9))
+function fahrenheitToCelsius (x) {
+    return (x - 32) * (5/9)
 }
 
 // 7. Create a function called celsiusToFahrenheit that takes a
 // Celsius temperature as an argument and returns the
 // temperature in Fahrenheit.
-function celsiusToFahrenheit (number) {
-    return ((number + 32) * (9/5))
+function celsiusToFahrenheit (x) {
+    return (x * 9/5) + 32
 }
 
 // 8. Create a function called fahrenheitToKelvin that takes a
@@ -54,16 +54,18 @@ function celsiusToFahrenheit (number) {
 // fahrenheitToCelsius function.
 // Absolute zero (0 K) is equivalent to −273.15 C.
 // 1 degree Kelvin equals 1 degree Celsius.
-// function fahrenheitToKelvin (number) {
-//     function fahrenheitToCelsius (number) {
-//         return ((number + 32) * (5/9))
-//     }
-//     return ((number) - (273.15))
-// }
+function fahrenheitToKelvin (x) {
+    const c = fahrenheitToCelsius(x)
+    return c + 273.15
+}
 
 // 9. Create a function called lesser that takes two numbers as
 // arguments and returns the lesser of them. This function should
 // use an if/else statement.
+function lesser (a, b) {
+    if a < b 
+    return a
+}
 
 // 10. Create a function called multigreeting that takes a name
 // and a language code and returns a version of "Hello, <name>!"
